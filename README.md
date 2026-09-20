@@ -1,44 +1,26 @@
 # PaintMacOS
 
-Простой аналог Paint для macOS на Python.
+Flask + HTML/CSS/JavaScript Paint для macOS.
 
-## Возможности
-
-- рисование кистью;
-- выбор цвета кисти;
-- изменение размера кисти;
-- импорт изображений;
-- экспорт изображений в PNG/JPEG/BMP/WEBP;
+Возможности:
+- рисование мышью или трекпадом;
+- цвет кисти;
+- размер кисти 1-80;
+- импорт изображения;
+- экспорт PNG;
 - очистка холста;
-- копирование холста как изображения в буфер обмена macOS.
+- копирование холста в буфер обмена.
 
 ## Запуск
 
-Перейдите в каталог проекта:
+cd /Users/inh/Desktop/lab/PaintMacOS
+rm -rf .venv
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+python3 app.py
 
-    cd /Users/inh/Desktop/lab/PaintMacOS
+Открыть в браузере:
 
-Создайте виртуальное окружение:
-
-    python3 -m venv .venv
-
-Активируйте его:
-
-    source .venv/bin/activate
-
-Установите зависимость:
-
-    python3 -m pip install -r requirements.txt
-
-Запустите приложение:
-
-    python3 paint.py
-
-## Требования
-
-- macOS;
-- Python 3.10+;
-- Pillow;
-- стандартный Tkinter, который должен быть доступен в используемой установке Python.
-
-Приложение специально оставлено небольшим и без лишней архитектурной магии, потому что иногда человечеству действительно нужен просто Paint.
+http://127.0.0.1:7789
